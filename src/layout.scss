@@ -1,13 +1,14 @@
 @import "./responsive.scss";
 
 .layout {
-  min-height: 100vh;
+  height: 100vh;
   max-width: 1366px;
   margin-left: auto;
   margin-right: auto;
   padding-left: 20px;
   padding-right: 20px;
-  background-color: bisque;
+  display: flex;
+  flex-direction: column;
 
   @include sm {
     max-width: 640px;
@@ -19,5 +20,9 @@
 
   @include lg {
     max-width: 1284px;
+  }
+
+  .content {
+    flex: 1;
   }
 }
