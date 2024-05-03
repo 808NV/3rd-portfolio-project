@@ -32,7 +32,7 @@ const Navbar = () => {
         <button className="menuBtn" onClick={() => toggleMenuHandler()}>
           <img src={menu} alt="menu button" />
         </button>
-        <div className={`menuItems ${toggleMenu ? "active" : null}`}>
+        <div className={`menuItems ${toggleMenu ? "" : "active"}`}>
           <a href="#">Home</a>
           <a href="#">About</a>
           <a href="#">Contact</a>

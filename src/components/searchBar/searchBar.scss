@@ -1,3 +1,4 @@
+@import "../../responsive.scss";
 .searchBar {
   .types {
     button {
@@ -31,9 +32,19 @@
     border: 1px solid #999;
     max-height: 64px;
 
+    @include sm {
+      flex-direction: column;
+      border: none;
+    }
+
     input {
       border: none;
       padding: 0px 10px;
+
+      @include sm {
+        padding: 1rem;
+        border: solid 1px #999;
+      }
     }
 
     button {
