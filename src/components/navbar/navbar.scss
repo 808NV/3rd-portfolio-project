@@ -1,0 +1,53 @@
+nav {
+  height: 100px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+
+  a {
+    transition: all 0.4s ease;
+
+    &:hover {
+      scale: 1.05;
+    }
+  }
+
+  .left {
+    display: flex;
+    align-items: center;
+    flex: 3;
+    gap: 50px;
+
+    .logo {
+      display: flex;
+      align-items: center;
+      gap: 10px;
+      font-weight: bold;
+      font-size: 20px;
+      img {
+        width: 28px;
+      }
+    }
+  }
+
+  .right {
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+    flex: 2;
+    background-color: #fcf5f3;
+    width: 100%;
+
+    button {
+      padding: 12px 24px;
+      margin: 20px;
+      background-color: transparent;
+      border: none;
+      cursor: pointer;
+    }
+    .register {
+      background-color: #fece51;
+      font-weight: bold;
+    }
+  }
+}
