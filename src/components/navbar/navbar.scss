@@ -1,3 +1,4 @@
+@import "../../responsive.scss";
 nav {
   height: 100px;
   display: flex;
@@ -18,6 +19,12 @@ nav {
     flex: 3;
     gap: 50px;
 
+    a {
+      @include sm {
+        display: none;
+      }
+    }
+
     .logo {
       display: flex;
       align-items: center;
@@ -26,6 +33,15 @@ nav {
       font-size: 20px;
       img {
         width: 28px;
+      }
+
+      span {
+        @include md {
+          display: none;
+        }
+        @include sm {
+          display: inline;
+        }
       }
     }
   }
@@ -44,7 +60,51 @@ nav {
       background-color: transparent;
       border: none;
       cursor: pointer;
+
+      @include sm {
+        display: none;
+      }
     }
+
+    .menuBtn {
+      display: none;
+      z-index: 2;
+      img {
+        width: 30px;
+        height: 30px;
+        background-color: transparent;
+      }
+
+      @include sm {
+        display: inline;
+      }
+    }
+
+    .menuItems {
+      display: none;
+      position: absolute;
+      top: 0;
+      right: -50%;
+      min-height: 100vh;
+      width: 50%;
+      background-color: black;
+      color: #fcf5f3;
+      font-size: 24px;
+      transition: right 0.5s ease-in-out;
+
+      @include sm {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        gap: 50px;
+      }
+    }
+
+    .active {
+      right: 0;
+    }
+
     .register {
       background-color: #fece51;
       font-weight: bold;
