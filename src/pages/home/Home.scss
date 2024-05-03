@@ -1,0 +1,55 @@
+.home {
+  display: flex;
+  height: 100%;
+
+  .txtContainer {
+    flex: 3;
+
+    .wrapper {
+      padding-right: 100px;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      gap: 50px;
+      height: 100%;
+
+      .title {
+        font-size: 64px;
+      }
+
+      .description {
+        font-size: 22px;
+        font-weight: lighter;
+        color: #2a2828c2;
+      }
+
+      .boxes {
+        display: flex;
+        gap: 50px;
+
+        h1 {
+          font-size: 32px;
+        }
+
+        h2 {
+          font-size: 20px;
+          font-weight: lighter;
+        }
+      }
+    }
+  }
+
+  .imgContainer {
+    flex: 2;
+    background-color: #fcf5f3;
+    position: relative;
+    display: flex;
+    align-items: center;
+
+    img {
+      width: 115%;
+      position: absolute;
+      right: 0;
+    }
+  }
+}
