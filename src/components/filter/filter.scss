@@ -1,0 +1,58 @@
+.filter {
+  h1 {
+    font-size: 25px;
+    font-weight: 300;
+    padding-top: 2rem;
+    padding-bottom: 0.5rem;
+  }
+
+  label {
+    font-size: 10px;
+  }
+
+  .top {
+    display: flex;
+
+    .search {
+      display: flex;
+      flex-direction: column;
+      width: 100%;
+      padding-bottom: 0.5rem;
+
+      input {
+        padding: 1rem 0.5rem;
+        font-size: 15px;
+        border-radius: 10px;
+        border: 1px solid #e0e0e0;
+      }
+    }
+  }
+
+  .bottom {
+    display: flex;
+    gap: 20px;
+
+    .item {
+      input,
+      select {
+        width: 100px;
+        padding: 1rem;
+        font-size: 14px;
+        border: 1px solid #e0e0e0;
+      }
+    }
+
+    .searchBtn {
+      background-color: #fece51;
+      width: 100px;
+      padding: 10px;
+      border: none;
+      border-radius: 5px;
+      cursor: pointer;
+
+      img {
+        width: 30px;
+      }
+    }
+  }
+}
