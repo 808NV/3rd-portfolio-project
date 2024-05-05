@@ -10,18 +10,27 @@ const Navbar = () => {
     setToggleMenu(!toggleMenu);
   };
 
-  const user = true;
+  const user = false;
   return (
     <nav>
       <div className="left">
-        <a href="#" className="logo">
+        <Link className="logo" to="/">
           <img src={logo} alt="logo" />
           <span>Oasis Estate</span>
-        </a>
-        <a href="#">Home</a>
-        <a href="#">About</a>
-        <a href="#">Contact</a>
-        <a href="#">Agents</a>
+        </Link>
+
+        <Link to="/">
+          <span>Home</span>
+        </Link>
+        <Link to="#">
+          <span>About</span>
+        </Link>
+        <Link>
+          <span>Contact</span>
+        </Link>
+        <Link>
+          <span>Agents</span>
+        </Link>
       </div>
       <div className="right">
         {user ? (

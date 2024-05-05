@@ -6,7 +6,7 @@ import Map from "../../components/map/Map";
 
 const List = () => {
   return (
-    <div className="list">
+    <div className="properties">
       <div className="cards">
         <div className="wrapper">
           <Filter />
