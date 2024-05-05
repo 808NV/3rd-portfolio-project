@@ -8,11 +8,11 @@ import saveIcon from "../../assets/save.png";
 const Card = ({ item }) => {
   return (
     <div className="card">
-      <Link to={`/${item.id}`} className="imgContainer">
+      <Link to={`${item.id}`} className="imgContainer">
         <img src={item.img} alt={`image of ${item.title}`} />
       </Link>
       <div className="txtContainer">
-        <Link to={`/${item.id}`}>
+        <Link to={`${item.id}`}>
           <h2 className="title">{item.title}</h2>
         </Link>
         <p className="location">
