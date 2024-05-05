@@ -4,7 +4,6 @@ nav {
   display: flex;
   justify-content: space-between;
   align-items: center;
-  margin-bottom: -12px;
 
   a {
     transition: all 0.4s ease;
@@ -69,6 +68,55 @@ nav {
 
       @include sm {
         display: none;
+      }
+    }
+
+    .user {
+      display: flex;
+      align-items: center;
+      font-weight: bold;
+      gap: 10px;
+      padding: 1rem;
+
+      img {
+        width: 40px;
+        height: 40px;
+        border-radius: 50%;
+        object-fit: cover;
+      }
+
+      span {
+        @include sm {
+          display: none;
+        }
+      }
+
+      .profile {
+        padding: 12px 20px;
+        background-color: #fece51;
+        cursor: pointer;
+        border: none;
+        position: relative;
+        margin-right: 2rem;
+        overflow: hidden;
+
+        @include sm {
+          display: none;
+        }
+
+        .notification {
+          position: absolute;
+          top: -8px;
+          right: -8px;
+          background-color: red;
+          color: white;
+          border-radius: 50%;
+          width: 26px;
+          height: 26px;
+          display: flex;
+          align-items: center;
+          justify-content: center;
+        }
       }
     }
 
