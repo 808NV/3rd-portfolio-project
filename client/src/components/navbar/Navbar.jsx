@@ -48,10 +48,10 @@ const Navbar = () => {
         ) : (
           <>
             {" "}
-            <a href="#">
+            <a href="/login">
               <button>Sign in</button>
             </a>
-            <a href="#">
+            <a href="/register">
               <button className="register">Sign up</button>
             </a>
           </>
